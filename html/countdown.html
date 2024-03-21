@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, interactive-widget=resizes-content, user-scalable=yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <title>Twitteria Podcast</title>
+        <meta name="description" content="Alte, weiße Männer laden österreichische Twitterant:innen ein, um gscheiter zu werden." />
+        <meta property="og:title" content="Twitteria Podcast" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="Alte, weiße Männer laden österreichische Twitterant:innen ein, um gscheiter zu werden." />
+        <meta property="og:image" content="https://twitteria.at/twitteria-3.png" />
+        <meta property="og:url" content="https://twitteria.at" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="twitteria.at" />
+        <meta property="twitter:url" content="https://twitteria.at" />
+        <meta name="twitter:title" content="Twitteria Podcast" />
+        <meta name="twitter:description" content="Alte, weiße Männer laden österreichische Twitterant:innen ein, um gscheiter zu werden." />
+        <meta name="twitter:image" content="https://twitteria.at/twitteria-3.png" />
+        <link rel="stylesheet" href="/build/styles-bundle.css" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <!-- meta -->
+    </head>
+    <body class="w-vw h-[100dvh] bg-background no-touch-highlight">
+        <div class="mx-auto max-w-full min-h-[100vh] flex-col flex gap-2 items-center justify-center gap-8 p-4 -mt-[50px]">
+            <img src="twitteria-3-banner.png" class="h-[250px]" />
+            <h2 class="text-xl text-center italic max-w-[500px] sm:max-w-full -mt-8">
+                Alte, weiße Männer laden österreichische Twitterant:innen ein, um gscheiter zu werden.
+            </h2>
+
+            <span id="time" class="text-[150px] text-center"></span>
+
+            <h2><a href="https://twitter.com/JoeyPrink" id="name" class="text-center text-8xl"></a></h2>
+
+            <img class="self-center h-[25%] rounded-full shadow-lg" src="/img/joey.jpeg" />
+
+            <p id="text" class="whitespace-pre-wrap text-4xl max-w-[50%] text-center"></p>
+        </div>
+    </body>
+    <script>
+        const name = `Dr. Johanna Pirker (@JoeyPrink)`;
+        const text = `
+Universitätsprofessorin, Wissenschaftlerin (KI, VR, Spieleforschung), Streamerin, Event- und Community-Organisatorin, Musikerin, Extremsportlerin, Forbes 30 under 30, ...
+
+Wie zum Teufel schafft sie das alles?
+        `;
+        document.querySelector("#name").innerHTML = name.trim();
+        document.querySelector("#text").innerHTML = text.trim();
+        const date = new Date("2024-03-05T21:00:00");
+
+        function countdown(element, targetDate) {
+            const updateCountdown = () => {
+                const now = new Date();
+                const target = new Date(targetDate);
+                const difference = target - now;
+
+                if (difference >= 0) {
+                    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                    element.textContent = `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds
+                        .toString()
+                        .padStart(2, "0")}`;
+
+                    setTimeout(updateCountdown, 1000);
+                } else {
+                    element.textContent = "00:00:00";
+                }
+            };
+
+            updateCountdown();
+        }
+
+        countdown(document.querySelector("#time"), date);
+    </script>
+</html>

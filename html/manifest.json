@@ -1,7 +1,7 @@
 {
-    "name": "__app_name__",
-    "short_name": "__app_name__",
-    "description": "__app_description__",
+    "name": "twitteria",
+    "short_name": "twitteria",
+    "description": "Twitteria - Ein Podcast für eh alles",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#000c15",

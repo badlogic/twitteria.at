@@ -1,0 +1,71 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:media="http://search.yahoo.com/mrss/"
+    xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+    <channel>
+        <atom:link href="https://twitteria.at/rss.xml" rel="self" title="MP3 Audio"
+            type="application/atom+xml" />
+        <atom:link xmlns="http://www.w3.org/2005/Atom" href="https://twitteria.at/"
+            rel="hub" />
+        <generator>https://twitteria.at</generator>
+        <title>Twitteria</title>
+        <description>Alte, weisse Männer laden österreichische Twitterant:innen ein, um gscheiter zu
+            werden.</description>
+        <copyright>2024 - Twitteria Podcast</copyright>
+        <language>de-at</language>
+        <pubDate>Mon, 11 Mar 2024 23:39:10 +0000</pubDate>
+        <lastBuildDate>Mon, 12 Mar 2024 07:00:00 +0000</lastBuildDate>
+        <image>
+            <link>https://twitteria.at</link>
+            <title>Twitteria</title>
+            <url>
+                https://twitteria.at/twitteria-3.png</url>
+        </image>
+        <link>https://twitteria.at</link>
+        <itunes:type>episodic</itunes:type>
+        <itunes:summary>Alte, weisse Männer laden österreichische Twitterant:innen ein, um gscheiter
+            zu werden.</itunes:summary>
+        <itunes:author>@Alltagsprolet, @BuffsInChucks, @badlogicgames (Mario Zechner)</itunes:author>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:image
+            href="https://twitteria.at/twitteria-3.png" />
+        <itunes:new-feed-url>https://twitteria.at/rss.xml</itunes:new-feed-url>
+        <itunes:keywords>spasspartie, twitter, österreich</itunes:keywords>
+        <itunes:owner>
+            <itunes:name>Mario Zechner</itunes:name>
+            <itunes:email>contact@mariozechner.at</itunes:email>
+        </itunes:owner>
+        <itunes:category text="Society &amp; Culture" />
+        <itunes:category text="Comedy" />
+        <item>
+            <title>Dr. Johanna Pirker (@JoeyPrink)</title>
+            <description>
+<![CDATA[ <p>In der ersten Episode des Twitteria Podcast dürfen wir Dr. Johanna Pirker Löcher in den Bauch fragen. Wir reden über Joey's Lebenslauf, Games Research, Killerspiele, Frauen in der IT, Künstliche Intelligenz, und mehr.</p><p><a href="https://jpirker.com/">Joey's Website</a></p><p><a href="https://twitteria.at">Twitteria.at</a></p> ]]>
+</description>
+            <pubDate>Mon, 12 Mar 2024 07:00:00 +0000</pubDate>
+            <author>@BuffsInChucks, @Alltagsprolet, @badlogicgames (Mario Zechner)</author>
+            <link>https://twitteria.at</link>
+            <content:encoded>
+<![CDATA[ <p>In der ersten Episode des Twitteria Podcast dürfen wir Dr. Johanna Pirker Löcher in den Bauch fragen. Wir reden über Joey's Lebenslauf, Games Research, Killerspiele, Frauen in der IT, Künstliche Intelligenz, und mehr.</p><p><a href="https://jpirker.com/">Joey's Website</a></p><p><a href="https://twitteria.at">Twitteria.at</a></p> ]]>
+</content:encoded>
+            <enclosure length="78786050" type="audio/mpeg"
+                url="https://twitteria.at/episodes/twitteria-0001-2024-03-04.mp3" />
+            <itunes:title>Dr. Johanna Pirker (@JoeyPrink)</itunes:title>
+            <itunes:author>Dr. Johanna Priker (@JoeyPrink), @BuffsInChucks, @Alltagsprolet,
+                @badlogicgames (Mario Zechner)</itunes:author>
+            <itunes:duration>01:22:04</itunes:duration>
+            <itunes:summary>Universitätsprofessorin, Wissenschaftlerin (KI, VR, Spieleforschung),
+                Streamerin, Event- und Community-Organisatorin, Musikerin, Extremsportlerin, Forbes
+                30 under 30, ... Wie zum Teufel schafft sie das alles?</itunes:summary>
+            <itunes:subtitle>Universitätsprofessorin, Wissenschaftlerin (KI, VR, Spieleforschung),
+                Streamerin, Event- und Community-Organisatorin, Musikerin, Extremsportlerin, Forbes
+                30 under 30, ... Wie zum Teufel schafft sie das alles?</itunes:subtitle>
+            <itunes:keywords>frauen in der it, killerspiele, games research, ki</itunes:keywords>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:episode>1</itunes:episode>
+        </item>
+    </channel>
+</rss>

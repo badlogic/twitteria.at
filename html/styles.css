@@ -39,9 +39,23 @@
 }
 
 @layer base {
+    @font-face {
+        font-family: "LabGrotesqueRegular";
+        src: url("/LabGrotesqueRegular.otf") format("opentype");
+    }
+    @font-face {
+        font-family: "LabGrotesqueMedium";
+        src: url("/LabGrotesqueMedium.otf") format("opentype");
+    }
+    @font-face {
+        font-family: "LabGrotesqueBold";
+        src: url("/LabGrotesqueBold.otf") format("opentype");
+    }
+
     html,
     body {
         @apply w-full leading-normal;
+        font-family: "LabGrotesqueRegular", sans-serif;
     }
 
     .hidden {

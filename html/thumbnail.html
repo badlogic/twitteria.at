@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, interactive-widget=resizes-content, user-scalable=yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <title>Twitteria Podcast</title>
+        <meta name="description" content="Alte, weiße Männer laden österreichische Twitterant:innen ein, um gscheiter zu werden." />
+        <meta property="og:title" content="Twitteria Podcast" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="Alte, weiße Männer laden österreichische Twitterant:innen ein, um gscheiter zu werden." />
+        <meta property="og:image" content="https://twitteria.at/twitteria-3.png" />
+        <meta property="og:url" content="https://twitteria.at" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="twitteria.at" />
+        <meta property="twitter:url" content="https://twitteria.at" />
+        <meta name="twitter:title" content="Twitteria Podcast" />
+        <meta name="twitter:description" content="Alte, weiße Männer laden österreichische Twitterant:innen ein, um gscheiter zu werden." />
+        <meta name="twitter:image" content="https://twitteria.at/twitteria-3.png" />
+        <link rel="stylesheet" href="/build/styles-bundle.css" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <script src="/js/dom-to-image.js"></script>
+
+        <!-- meta -->
+    </head>
+    <body class="w-vw h-[100dvh] bg-background no-touch-highlight bg-black">
+        <div id="thumbnail" class="w-[512px] h-[512px] flex flex-col bg-[#eee] items-center justify-center">
+            <div class="flex-1 flex flex-col items-center justify-center">
+                <img src="twitteria-3-banner.png" class="w-[75%]" />
+                <div class="flex items-center justify-center gap-2 text-lg">
+                    <svg class="inline text-[#f00]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path
+                            d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"
+                        ></path>
+                    </svg>
+                    <span>https://youtube.com/@twitteria</span>
+                </div>
+            </div>
+            <div class="p-4 flex flex-1 gap-4 bg-[#fff] mt-4 w-full">
+                <img id="out-img-url" class="self-center h-24 rounded-full shadow-lg" />
+                <div class="flex flex-col gap-2 justify-center">
+                    <h2><a id="out-name" href="https://twitter.com/JoeyPrink"></a></h2>
+                    <span id="out-date" class="font-bold text-xl text-blue-600"></span>
+                    <p id="out-text" class="italic whitespace-pre-wrap"></p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col text-[#fff] mt-4 max-w-[512px]">
+            <label>Bild URL</label>
+            <input id="img-url" class="text-[#000] p-2" value="https://pbs.twimg.com/profile_images/1173201591949758465/1d2h7toy_400x400.jpg" />
+            <label>Gast Name</label>
+            <input id="name" class="text-[#000] p-2" value="Dr. Johanna Pirker (@JoeyPrink)" />
+            <label>Datum (Wochentag - TT.MM.YYYY - HH:MM)</label>
+            <input id="date" class="text-[#000] p-2" value="Dienstag - 5.3.2024 - 21:00" />
+            <label>Text</label>
+            <textarea id="text" class="p-4 text-[#000]" rows="7">
+Universitätsprofessorin, Wissenschaftlerin (KI, VR, Spieleforschung), Streamerin, Event- und Community-Organisatorin, Musikerin, Extremsportlerin, Forbes 30 under 30, ...
+
+Wie zum Teufel schafft sie das?
+            </textarea>
+        </div>
+        <button id="save" class="bg-[#fff] mt-4 px-4 py-2 rounded-md">Download PNG</button>
+    </body>
+    <script>
+        document.body.querySelector("#save").addEventListener("click", async () => {
+            const elm = document.getElementById("thumbnail");
+            const image = await htmlToImage.toPng(elm, {});
+
+            var link = document.createElement("a");
+            link.download = "thumbnail.png";
+            link.href = image;
+            link.click();
+        });
+
+        Array.from(document.querySelectorAll("input")).map((el) => el.addEventListener("keyup", () => apply()));
+        Array.from(document.querySelectorAll("input")).map((el) => el.addEventListener("keydown", () => apply()));
+        Array.from(document.querySelectorAll("input")).map((el) => el.addEventListener("input", () => apply()));
+        Array.from(document.querySelectorAll("input")).map((el) => el.addEventListener("change", () => apply()));
+        Array.from(document.querySelectorAll("textarea")).map((el) => el.addEventListener("keyup", () => apply()));
+        Array.from(document.querySelectorAll("textarea")).map((el) => el.addEventListener("keydown", () => apply()));
+        Array.from(document.querySelectorAll("textarea")).map((el) => el.addEventListener("input", () => apply()));
+        Array.from(document.querySelectorAll("textarea")).map((el) => el.addEventListener("change", () => apply()));
+
+        function apply() {
+            const imgUrl = document.querySelector("#img-url").value.trim();
+            const name = document.querySelector("#name").value.trim();
+            const date = document.querySelector("#date").value.trim();
+            const text = document.querySelector("#text").value.trim();
+
+            document.querySelector("#out-img-url").src = imgUrl;
+            document.querySelector("#out-name").innerHTML = name;
+            document.querySelector("#out-date").innerHTML = date;
+            document.querySelector("#out-text").textContent = text;
+        }
+
+        apply();
+    </script>
+</html>
